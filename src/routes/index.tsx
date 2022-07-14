@@ -12,6 +12,7 @@ const RootRouter = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainPage />} />
+        <Route path="/oauth/redirect/" element={<MainPage />} />
         <Route path="/record" element={<RecordPage />} />
         <Route path="/statistic" element={<StatisticPage />} />
         <Route path="/setting" element={<SettingPage />} />
