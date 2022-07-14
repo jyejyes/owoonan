@@ -1,4 +1,4 @@
-//전역-스타일 모음
+// 전역-스타일 모음
 import { createGlobalStyle } from "styled-components";
 import "./reset.css";
 
