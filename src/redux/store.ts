@@ -1,14 +1,14 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import loginSlice from "./loginSlice";
 import storage from "redux-persist/lib/storage";
 import { persistReducer } from "redux-persist";
+import tokenSlice from "./tokenSlice";
 
-const reducers = combineReducers({
-  login: loginSlice.reducer,
-  logout: loginSlice.reducer,
+const rootReducer = combineReducers({
+  saveToken: tokenSlice.reducer,
+  deleteToken: tokenSlice.reducer,
 });
 const persistConfig = { key: "root", storage };
-const persistedReducer = persistReducer(persistConfig, reducers);
+const persistedReducer = persistReducer(persistConfig, rootReducer);
 export const store = configureStore({
   reducer: persistedReducer,
   middleware: (getDefaultMiddleware) =>
@@ -17,3 +17,5 @@ export const store = configureStore({
     }),
   devTools: process.env.NODE_ENV !== "production",
 });
+
+export type RootReducer = ReturnType<typeof rootReducer>;

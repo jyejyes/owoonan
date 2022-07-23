@@ -1,6 +1,8 @@
 // 전역-스타일 모음
 import { createGlobalStyle } from "styled-components";
 import "./reset.css";
+import SDSamliphopangche from "./fonts/SDSamliphopangche.ttf";
+import NotoSansKR_Regular from "./fonts/NotoSansKR-Regular.otf";
 
 export const GlobalStyle = createGlobalStyle`   
     /* @font-face {
@@ -9,6 +11,16 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: normal;
         font-style: normal;
     } */
+    @font-face {
+        font-family: "NotoSansKR_Regular";
+        src: url(${NotoSansKR_Regular}) format("opentype");
+
+    }
+    @font-face {
+        font-family: "SDSamliphopangche";
+        src: url(${SDSamliphopangche}) format("truetype");
+
+    }
 
     html{
         /* font-family: 'LeferiBaseType-RegularA'; */
