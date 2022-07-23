@@ -1,16 +1,13 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import Exercise from "../components/exercise/exercise";
 import Login from "../components/login/login";
+import { RootReducer } from "../redux/store";
 
 const MainPage = () => {
-  const token = useSelector((state: { login }) => state.login.token);
+  const token = useSelector((state: RootReducer) => state.saveToken.token);
   console.log(token);
-  return (
-    <h1>
-      메인페이지: 로그인 or 운동
-      <Login />
-    </h1>
-  );
+  return <div>{token ? <Login /> : <Exercise />}</div>;
 };
 
 export default MainPage;
