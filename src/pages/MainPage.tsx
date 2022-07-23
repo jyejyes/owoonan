@@ -6,8 +6,7 @@ import { RootReducer } from "../redux/store";
 
 const MainPage = () => {
   const token = useSelector((state: RootReducer) => state.saveToken.token);
-  console.log(token);
-  return <div>{token ? <Login /> : <Exercise />}</div>;
+  return <div>{!token ? <Login /> : <Exercise />}</div>;
 };
 
 export default MainPage;
