@@ -83,7 +83,7 @@ body {
   padding: 0;
   border: 0;
   font-size: 62.5%;
-  font-family: "LeferiBaseType-RegularA";
+  font-family: "NotoSansKR_Regular";
   vertical-align: baseline;
   box-sizing: border-box;
 }
@@ -164,4 +164,8 @@ button {
   padding: 0;
   border: none;
   cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
 }

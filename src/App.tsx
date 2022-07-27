@@ -24,7 +24,9 @@ const Backgound = styled.div`
 `;
 
 const Container = styled.div`
+  padding: 0px;
+  margin: 0px;
   width: 360px;
-  height: 600px;
+  height: 640px;
   background-color: white;
 `;
