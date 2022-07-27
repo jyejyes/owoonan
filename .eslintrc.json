@@ -18,7 +18,7 @@
     "quotes": ["error", "double"],
     "eol-last": "error",
     "no-trailing-spaces": "error",
-    "indent": ["error", 2],
+    "indent": "off",
     "keyword-spacing": 0,
     "spaced-comment": ["error", "always"],
     "no-unused-vars": "warn",
