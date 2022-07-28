@@ -11,14 +11,13 @@ const Login = () => {
   const navigate = useNavigate();
 
   const [token, setToken] = useState<string | null>(null);
-
   useEffect(() => {
     setToken(new URLSearchParams(location.search).get("token"));
 
     if (token) {
       dispatch(saveToken(token));
       if (check) {
-        navigate("/");
+        // navigate("/");
       }
     }
   }, [token]);

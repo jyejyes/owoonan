@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 import "./reset.css";
 import SDSamliphopangche from "./fonts/SDSamliphopangche.ttf";
 import NotoSansKR_Regular from "./fonts/NotoSansKR-Regular.otf";
+import SEBANG_Gothic from "./fonts/SEBANG_Gothic.ttf";
 
 export const GlobalStyle = createGlobalStyle`   
     /* @font-face {
@@ -19,6 +20,11 @@ export const GlobalStyle = createGlobalStyle`
     @font-face {
         font-family: "SDSamliphopangche";
         src: url(${SDSamliphopangche}) format("truetype");
+
+    }
+    @font-face {
+        font-family: "SEBANG_Gothic";
+        src: url(${SEBANG_Gothic}) format("truetype");
 
     }
 

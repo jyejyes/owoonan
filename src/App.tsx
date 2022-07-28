@@ -1,6 +1,8 @@
 import React from "react";
 import RootRouter from "./routes";
 import styled from "styled-components";
+import { useSelector } from "react-redux";
+import { RootReducer } from "./redux/store";
 
 function App() {
   return (
@@ -24,6 +26,7 @@ const Backgound = styled.div`
 `;
 
 const Container = styled.div`
+  position: absolute;
   padding: 0px;
   margin: 0px;
   width: 360px;

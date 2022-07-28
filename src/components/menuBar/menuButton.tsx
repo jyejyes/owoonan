@@ -51,8 +51,8 @@ const MenuButton = ({ prop }: PropType) => {
 export default MenuButton;
 
 const StyledBtn = styled.button`
-  width: 50px;
-  height: 40px;
+  width: 5rem;
+  height: 4rem;
 `;
 
 const StyledTitle = styled.p`

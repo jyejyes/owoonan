@@ -11,6 +11,7 @@ const color = {
   white: "#FFFFFF",
   main: "#FF6A9F",
   light_gray: "#D9D9D9",
+  whisper: "#EEEEEE",
   yellow: "#FEE500",
   green: "#1EC800",
   deepBlue: "#1C2C80",
