@@ -1,14 +1,19 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+interface TokenState {
+  token: string | null;
+}
+const initialState: TokenState = { token: null };
+
 const tokenSlice = createSlice({
   name: "tokenStorage",
-  initialState: { token: null },
+  initialState,
   reducers: {
     saveToken: (state, action) => {
       state.token = action.payload;
     },
     deleteToken: (state, action) => {
-      state.token = action.payload;
+      state.token = null;
     },
   },
 });

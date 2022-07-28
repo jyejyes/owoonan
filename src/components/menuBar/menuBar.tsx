@@ -15,12 +15,10 @@ export default MenuBar;
 
 const Container = styled.div`
   position: relative;
-
-  top: 550px;
-  width: 360px;
-  height: 90px;
+  width: 100%;
+  height: 9rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
+  padding: 1rem 3rem;
 `;
