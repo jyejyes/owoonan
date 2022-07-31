@@ -13,12 +13,9 @@ const Login = () => {
   const [token, setToken] = useState<string | null>(null);
   useEffect(() => {
     setToken(new URLSearchParams(location.search).get("token"));
-
+    console.log(token);
     if (token) {
       dispatch(saveToken(token));
-      if (check) {
-        // navigate("/");
-      }
     }
   }, [token]);
 
