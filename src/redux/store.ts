@@ -5,7 +5,6 @@ import tokenSlice from "./tokenSlice";
 
 const rootReducer = combineReducers({
   saveToken: tokenSlice.reducer,
-  deleteToken: tokenSlice.reducer,
 });
 const persistConfig = { key: "root", storage };
 const persistedReducer = persistReducer(persistConfig, rootReducer);

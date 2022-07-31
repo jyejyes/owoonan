@@ -6,7 +6,7 @@ import RoutineList from "../routineList/routineList";
 
 const Exercise = () => (
   <Container>
-    <PageNameBar pageName={"운동"} />
+    <PageNameBar pageName="운동" />
     <RoutineList />
     <MenuBar />
   </Container>
