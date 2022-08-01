@@ -1,24 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
-import { saveToken } from "../../redux/tokenSlice";
+import React from "react";
 import styled from "styled-components";
 import LoginButton from "./loginButton";
 
 const Login = () => {
-  const dispatch = useDispatch();
-  const check = useSelector((state) => state);
-  const navigate = useNavigate();
-
-  const [token, setToken] = useState<string | null>(null);
-  useEffect(() => {
-    setToken(new URLSearchParams(location.search).get("token"));
-    console.log(token);
-    if (token) {
-      dispatch(saveToken(token));
-    }
-  }, [token]);
-
   return (
     <Container>
       <Logo src="/image/logo.svg" />
