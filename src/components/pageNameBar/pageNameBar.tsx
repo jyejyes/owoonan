@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { theme } from "../../style/theme";
 
 type PropType = {
   pageName: string;
@@ -10,7 +9,6 @@ const PageNameBar = ({ pageName }: PropType) => (
     <PageName>{pageName}</PageName>
   </Container>
 );
-
 export default PageNameBar;
 
 const Container = styled.div`
